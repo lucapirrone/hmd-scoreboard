@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.gameControlsContainer {
+    display: flex;
+    flex: 1;
+}
+.diplayControlsContainer {
+    display: flex;
+    flex: 1;
+}
