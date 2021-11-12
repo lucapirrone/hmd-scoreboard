@@ -4,12 +4,8 @@ import {Button} from "../Button/Button";
 import {TextField} from "../TextField/TextField";
 import {TextField as MaterialTextField} from "@mui/material";
 import {Label} from "../Label/Label";
-import {red} from "@mui/material/colors";
 import {IGameState} from "../../type";
 import {useSelector} from "react-redux";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
-import * as path from "path";
 
 export const GameControls = () => {
   const gameState: IGameState = useSelector((state: IGameState) => state);
