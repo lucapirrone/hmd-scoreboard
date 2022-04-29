@@ -1,12 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  align-items: center;
 }
 
 .time {
-  font-size: 100px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -16,18 +14,28 @@
 }
 
 .missingMinutes {
-  font-size: 150px;
+  font-size: 180px;
+  line-height: 180px;
   animation:1s blinker linear infinite;
+  margin: 0;
 }
 
 .colon {
   font-size: 100px;
   text-decoration: blink;
+  margin: 0;
 }
 
 .missingSeconds {
-  font-size: 150px;
+  font-size: 180px;
+  line-height: 180px;
   text-decoration: blink;
+  margin: 0;
+}
+
+.hmdLogo {
+  width: 200px;
+  height: 200px;
 }
 
 @keyframes blinker {

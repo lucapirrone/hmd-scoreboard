@@ -12,7 +12,7 @@
 }
 
 .score {
-  font-size: 130px;
+  font-size: 180px;
   text-align: center;
   margin: 0;
 }
@@ -33,11 +33,11 @@
 }
 
 .extraItemTitle {
-  font-size: 30px;
+  font-size: 50px;
   text-align: left;
 }
 
 .extraItemValue {
-  font-size: 30px;
+  font-size: 50px;
   text-align: left;
 }

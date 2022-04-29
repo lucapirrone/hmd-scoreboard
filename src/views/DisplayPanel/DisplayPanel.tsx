@@ -6,7 +6,7 @@ import {useSelector} from "react-redux";
 import {IGameState} from "../../type";
 
 
-export const DisplayPanel = () => {
+export const DisplayPanel = ({reverse = true}: { reverse?: boolean }) => {
   const gameState: IGameState = useSelector((state: IGameState) => state);
   return (
     <div className={style.container}>
@@ -15,13 +15,27 @@ export const DisplayPanel = () => {
       </div>
       <div className={style.center}>
         <div className={style.playerControlsContainer}>
-          <PlayerControls side='blue' state={gameState.bluePlayer}/>
+          {
+            reverse ? (
+              <PlayerControls side="red" state={gameState.redPlayer}/>
+            ) : (
+              <PlayerControls side='blue' state={gameState.bluePlayer}/>
+            )
+          }
+
         </div>
         <div className={style.gameInfoContainer}>
           <GameInfo state={gameState.gameSettings}/>
         </div>
         <div className={style.playerControlsContainer}>
-          <PlayerControls side="red" state={gameState.redPlayer}/>
+          {
+            reverse ? (
+              <PlayerControls side='blue' state={gameState.bluePlayer}/>
+
+            ) : (
+              <PlayerControls side="red" state={gameState.redPlayer}/>
+            )
+          }
         </div>
       </div>
       <div className={style.footer}>

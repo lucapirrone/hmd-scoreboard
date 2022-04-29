@@ -11,7 +11,7 @@ export const ControlPanel = () => {
         <GameControls />
       </div>
       <div className={style.diplayControlsContainer}>
-        <DisplayPanel />
+        <DisplayPanel reverse={false} />
       </div>
     </div>
   )
